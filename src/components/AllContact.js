@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import Confirm from "./Confirm";
 import SucessDelete from "./SuccessDelete";
 import SuccessUpload from "./SuccessUpload";
+import Footer from "./Footer";
 
 const AllContact = () => {
   const navigate = useNavigate();
@@ -143,7 +144,7 @@ const AllContact = () => {
               <th className="designation">Designation</th>
               <th className="company">Company</th>
               <th className="industry">Industry</th>
-              <th className="email">Email</th>
+              <th className="emailHead">Email</th>
               <th className="phoneNumber">Phone Number</th>
               <th className="country">Country</th>
               <th className="action">Action</th>
@@ -160,6 +161,8 @@ const AllContact = () => {
             ))}
           </tbody>
         </table>
+
+        <Footer />
       </section>
     </div>
   );
